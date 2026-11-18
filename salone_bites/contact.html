@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings: character set and mobile-friendly scaling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Salone Bites.">
+  <title>Salone Bites - Contact</title>
+  <!-- Links the external stylesheet -->
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- JavaScript files (defer = run after the page has loaded) -->
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+
+  <!-- Header: logo, menu button (phones only) and main navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <!-- Menu button: shown on phones, opened and closed by js/main.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <!-- aria-current marks the page the visitor is on -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <div class="contact-layout">
+          <!-- Contact details -->
+          <div class="contact-info">
+            <h2 class="section-title">Our details</h2>
+            <p><strong>Address:</strong> Freetown, Sierra Leone</p>
+            <p><strong>Phone:</strong> +232 73 82 78 89</p>
+            <p><strong>Email:</strong> info@salonebites.com</p>
+          </div>
+
+          <!-- Contact form: checked by js/contact.js. The required attributes are a backup: the browser checks the form by itself if JavaScript does not load. -->
+          <form id="contact-form" class="contact-form">
+            <h2 class="section-title">Send us a message</h2>
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" aria-describedby="name-error">
+              <p class="error" id="name-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <p class="error" id="email-error" aria-live="polite"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
+              <p class="error" id="message-error" aria-live="polite"></p>
+            </div>
+
+            <button type="submit" class="btn">Send message</button>
+            <p class="success" id="form-success" role="status" hidden>Thank you! Your message has been sent.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map of Freetown (the footer Location link goes here) -->
+    <section class="section section-alt" id="location">
+      <div class="container">
+        <h2 class="section-title">Location</h2>
+        <iframe class="map" title="Map of Freetown, Sierra Leone" loading="lazy"
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126265.1843477123!2d-13.272186950000002!3d8.46567675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMjcnNTYuNCJOIDEzwrAxNicxOS45Ilc!52e0!3m2!1sen!2ssl!4v1710000000000!5m2!1sen!2ssl"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: logo and footer links (same on every page) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
