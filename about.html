@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings: character set and mobile-friendly scaling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the mission of Salone Bites.">
+  <title>Salone Bites - About</title>
+  <!-- Links the external stylesheet -->
+  <link rel="stylesheet" href="css/about.css">
+  <!-- JavaScript files (defer = run after the page has loaded) -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header: logo, menu button (phones only) and main navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <!-- Menu button: shown on phones, opened and closed by js/main.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <!-- aria-current marks the page the visitor is on -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page heading and short introduction -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h1 class="page-title">About Salone Bites</h1>
+          <p>Salone Bites is a website that brings Sierra Leonean dishes and restaurants together in one place. Information about local food is often spread across social media pages or shared by word of mouth. We make menus, prices and locations easy to find.</p>
+          <p>Our site is designed for students, families, tourists and anyone who wants to enjoy authentic Sierra Leonean food.</p>
+        </div>
+        <img class="split-image" src="images/hero.jpg" alt="A plate of Sierra Leonean food">
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Mission: image on the left, text on the right -->
+    <section class="section">
+      <div class="container split split-reverse">
+        <img class="split-image" src="images/cassava-leaf2.jpg" alt="Cassava leaf stew served with rice">
+        <div>
+          <h2 class="section-title">Our Mission</h2>
+          <p>Our mission is to promote Sierra Leonean cuisine, support local farmers and chefs, and help small restaurants reach more customers. Good food brings people together, and we want everyone to find it easily.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Reasons for the website -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Why Salone Bites?</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Everything in one place</h3>
+            <p>Dishes, restaurants, menus and locations are all easy to find.</p>
+          </article>
+          <article class="card">
+            <h3>Supports local business</h3>
+            <p>Small restaurants get more visibility and more customers.</p>
+          </article>
+          <article class="card">
+            <h3>Celebrates our culture</h3>
+            <p>Sierra Leonean food gets the recognition it deserves online.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: logo and footer links (same on every page) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
