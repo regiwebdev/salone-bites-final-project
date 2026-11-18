@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Page settings: character set and mobile-friendly scaling -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="What Salone Bites offers and how it works.">
+  <title>Salone Bites - Services</title>
+  <!-- Links the external stylesheet -->
+  <link rel="stylesheet" href="css/services.css">
+  <!-- JavaScript files (defer = run after the page has loaded) -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Header: logo, menu button (phones only) and main navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <!-- Menu button: shown on phones, opened and closed by js/main.js -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <!-- aria-current marks the page the visitor is on -->
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Four core services -->
+    <section class="section">
+      <div class="container">
+        <h1 class="page-title">Our Services</h1>
+        <div class="service-grid">
+          <article class="card">
+            <h3>Explore local food</h3>
+            <p>Browse traditional Sierra Leonean dishes and learn what to try.</p>
+          </article>
+          <article class="card">
+            <h3>Discover restaurants</h3>
+            <p>Find restaurants across Freetown and other areas in one place.</p>
+          </article>
+          <article class="card">
+            <h3>View menus and prices</h3>
+            <p>See what is on offer and what it costs before you go.</p>
+          </article>
+          <article class="card">
+            <h3>Find locations</h3>
+            <p>Get directions to the restaurant you choose.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three-step guide: Explore, Choose, Visit -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <h3>Explore</h3>
+            <p>Search and filter dishes and restaurants.</p>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <h3>Choose</h3>
+            <p>Pick the dish or restaurant you like.</p>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <h3>Visit</h3>
+            <p>Go and enjoy your meal.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: logo and footer links (same on every page) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">Salone Bites</a>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#location">Location</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
